@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=D1 Old Footprint=INF-SOT23_L New Footprint=INF-SOT23_L
+Change Component Footprint: Designator=D10 Old Footprint=INF-SOT23_L New Footprint=INF-SOT23_L
+Change Component Footprint: Designator=Q1 Old Footprint=INF-SOT23_L New Footprint=INF-SOT23_L
+Change Component Footprint: Designator=Q2 Old Footprint=INF-SOT23_L New Footprint=INF-SOT23_L
+Change Component Footprint: Designator=U3 Old Footprint=M08A_L New Footprint=M08A_L
+Change Component Footprint: Designator=D2 Old Footprint=ONSC-SOT-23-3-318-08_V New Footprint=ONSC-SOT-23-3-318-08_V
+Added Component: Designator=R8(6-0805_M)
+Added Component: Designator=R9(6-0805_M)
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetD2_1 Pin=R8-2
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=NetD2_2 Pin=R9-2
+Added Member To Class: ClassName=Main_board Member=Component R8 RC0805FR-07100KL
+Added Member To Class: ClassName=Main_board Member=Component R9 RC0805FR-07100KL

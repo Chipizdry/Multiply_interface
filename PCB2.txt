@@ -1,0 +1,188 @@
+Board Information Report
+Filename     : C:\Users\Public\Documents\Altium\Projects\Multiply_interface\PCB2.PcbDoc
+Date         : 30.06.2022
+Time         : 10:17:47
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 1949.471milsx1949.471mils
+    Components on board, 48
+count : 2
+
+Routing Information
+    Routing completion, 92,00%
+    Connections, 100
+    Connections routed, 92
+    Connections remaining, 8
+count : 4
+
+Layer, Arcs, Pads, Vias, Tracks, Texts, Fills, Regions, ComponentBodies
+    Top Layer, 4, 115, 0, 275, 0, 0, 26, 0
+    Bottom Layer, 0, 18, 0, 87, 0, 0, 2, 0
+    Mechanical 1, 13, 0, 0, 5, 0, 0, 0, 2
+    Top Courtyard, 0, 0, 0, 24, 0, 0, 0, 0
+    Bottom Courtyard, 0, 0, 0, 0, 0, 0, 0, 0
+    Top 3D Body, 0, 0, 0, 48, 0, 0, 0, 4
+    Bottom 3D Body, 0, 0, 0, 0, 0, 0, 1, 0
+    Top Assembly, 0, 0, 0, 48, 4, 0, 0, 0
+    Bottom Assembly, 0, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 10, 0, 0, 0, 72, 18, 0, 0, 0
+    Mechanical 12, 0, 0, 0, 72, 0, 0, 0, 0
+    Mechanical 13, 1, 0, 0, 234, 1, 0, 0, 42
+    Mechanical 15, 0, 0, 0, 276, 0, 0, 1, 0
+    Multi-Layer, 0, 18, 22, 0, 0, 0, 1, 0
+    Top Paste, 0, 0, 0, 0, 0, 0, 0, 0
+    Top Overlay, 12, 0, 0, 155, 79, 0, 3, 0
+    Top Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Overlay, 5, 0, 0, 18, 18, 0, 0, 0
+    Bottom Paste, 0, 0, 0, 0, 0, 8, 0, 0
+    Drill Guide, 0, 0, 0, 0, 0, 0, 0, 0
+    Keep-Out Layer, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Drawing, 0, 0, 0, 0, 0, 0, 0, 0
+count : 23
+
+Drill Pairs, Vias
+    Top Layer - Bottom Layer, 22
+count : 1
+
+Layer, Sq.In., Sq.MM., Percent of layer
+    Top Layer, 2,556, 1649,088, 79%
+    Bottom Layer, 2,837, 1830,204, 88%
+count : 2
+
+Non-Plated Hole Size, Pads, Vias
+count : 0
+
+Plated Hole Size, Pads, Vias
+    0mils, 133, 0
+    20mils, 0, 22
+    39.37mils, 6, 0
+    47.244mils, 12, 0
+count : 4
+
+Non-Plated Slot Size / Length, Pads
+count : 0
+
+Plated Slot Size / Length, Pads
+count : 0
+
+Non-Plated Square Hole Size, Pads
+count : 0
+
+Plated Square Hole Size, Pads
+count : 0
+
+Top Layer Annular Ring Size, Count
+    20mils, 22
+    21.654mils, 6
+    23.622mils, 12
+count : 3
+
+Mid Layer Annular Ring Size, Count
+    20mils, 22
+    21.654mils, 6
+    23.622mils, 12
+count : 3
+
+Bottom Layer Annular Ring Size, Count
+    20mils, 22
+    21.654mils, 6
+    23.622mils, 12
+count : 3
+
+Pad Solder Mask, Count
+    0mils, 72
+    4mils, 79
+count : 2
+
+Pad Paste Mask, Count
+    -39370.079mils, 14
+    0mils, 137
+count : 2
+
+Pad Pwr/Gnd Expansion, Count
+    20mils, 151
+count : 1
+
+Pad Relief Conductor Width, Count
+    10mils, 151
+count : 1
+
+Pad Relief Air Gap, Count
+    10mils, 151
+count : 1
+
+Pad Relief Entries, Count
+    4, 151
+count : 1
+
+Via Solder Mask, Count
+    4mils, 22
+count : 1
+
+Via Pwr/Gnd Expansion, Count
+    20mils, 22
+count : 1
+
+Track Width, Count
+    0.5mils, 16
+    1mils, 133
+    1.969mils, 52
+    3.937mils, 353
+    5.906mils, 16
+    6mils, 28
+    7.874mils, 365
+    15mils, 351
+count : 8
+
+Arc Line Width, Count
+    0.5mils, 7
+    3.937mils, 1
+    9.843mils, 16
+    15.748mils, 1
+    30mils, 10
+count : 5
+
+Arc Radius, Count
+    0.261mils, 2
+    0.265mils, 2
+    0.266mils, 4
+    0.267mils, 2
+    4.921mils, 16
+    7.874mils, 1
+    19.685mils, 1
+    26.449mils, 4
+    1041.287mils, 3
+count : 9
+
+Arc Degrees, Count
+    18, 10
+    54, 7
+    360, 18
+count : 3
+
+Text Height, Count
+    30mils, 44
+    39.37mils, 18
+    50mils, 2
+    59.055mils, 4
+    60mils, 52
+count : 5
+
+Text Width, Count
+    3mils, 2
+    3.937mils, 18
+    5mils, 43
+    5.906mils, 4
+    7mils, 1
+    10mils, 52
+count : 6
+
+Net Track Width, Count
+    10mils, 34
+count : 1
+
+Net Via Size, Count
+    40mils, 34
+count : 1

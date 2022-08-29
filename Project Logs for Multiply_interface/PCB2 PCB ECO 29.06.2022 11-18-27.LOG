@@ -1,0 +1,12 @@
+Added Component: Designator=R12(6-0805_M)
+Added Component: Designator=R13(6-0805_M)
+Added Component: Designator=R15(6-0805_M)
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=NetR8_1 Pin=R12-2
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=NetR9_1 Pin=R13-2
+Added Pin To Net: NetName=NetQ2_3 Pin=R15-1
+Added Pin To Net: NetName=NetD10_3 Pin=R15-2
+Added Member To Class: ClassName=Main_board Member=Component R12 RC0805FR-07100KL
+Added Member To Class: ClassName=Main_board Member=Component R13 RC0805FR-07100KL
+Added Member To Class: ClassName=Main_board Member=Component R15 RC0805FR-07100KL
