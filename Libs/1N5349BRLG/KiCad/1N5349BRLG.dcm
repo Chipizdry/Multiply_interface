@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N5349BRLG
+D Zener Diode, 12V 5% 5 W Through Hole 2-pin DO-15
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-3/sf-00075052.pdf
+$ENDCMP
+#
+#End Doc Library

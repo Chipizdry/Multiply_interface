@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1N5349BRLG'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_TESTING_PART_NUMBER", "MOUSER_TESTING_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "onsemi", "1N5349BRLG" (!) = "", "DIOAD2260W109L864D349", "Diodes, Axial Diameter Horizontal Mounting", "863-1N5349BRLG", "https://www.mouser.co.uk/ProductDetail/onsemi/1N5349BRLG?qs=y2kkmE52mdPPPvJa3zV6XA%3D%3D", "1N5349BRLG", "https://www.arrow.com/en/products/1n5349brlg/on-semiconductor?region=nac", "", "", "Zener Diode, 12V 5% 5 W Through Hole 2-pin DO-15", "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-3/sf-00075052.pdf"
+END_PART
+
+END.

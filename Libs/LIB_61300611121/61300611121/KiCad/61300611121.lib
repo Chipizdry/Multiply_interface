@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 61300611121
+#/278322/261166/2.49/6/3/Connector
+DEF 61300611121 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "61300611121" 650 200 50 H V L CNN
+F2 "HDRV6W64P0X254_1X6_1524X254X869P" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/61300611121.pdf" 650 0 50 H I L CNN
+F4 "WR-PHD 2.54mm Pin Header THT Straight 6p Wurth Elektronik WR-PHD Series, Series Number 6130, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Cable Mount" 650 -100 50 H I L CNN "Description"
+F5 "8.69" 650 -200 50 H I L CNN "Height"
+F6 "Wurth Elektronik" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "61300611121" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "710-61300611121" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/61300611121?qs=t4813l51qx%2FRpdf0Kp1HlQ%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 650 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+X 6 6 0 -500 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -600 200 -600 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

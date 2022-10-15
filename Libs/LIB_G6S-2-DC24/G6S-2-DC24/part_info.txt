@@ -1,0 +1,9 @@
+Manufacturer=Omron Electronics
+PartNumber=G6S-2-DC24
+PartCategory=Relay or Contactor
+PackageCategory=Other
+PinCount=8
+Version=2.3
+Released=2020-04-20 14:13:13
+Downloaded=2022-10-15 15:15:49
+3D=Y

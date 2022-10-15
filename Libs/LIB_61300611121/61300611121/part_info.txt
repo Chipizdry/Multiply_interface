@@ -1,0 +1,9 @@
+Manufacturer=Würth Elektronik
+PartNumber=61300611121
+PartCategory=Connector
+PackageCategory=Header, Vertical
+PinCount=6
+Version=4.1
+Released=2017-05-06 20:43:13
+Downloaded=2022-07-04 12:25:20
+3D=Y

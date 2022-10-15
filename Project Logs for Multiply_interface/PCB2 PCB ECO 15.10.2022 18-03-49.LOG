@@ -1,0 +1,49 @@
+Added Component: Designator=C1(CAPPM7343X430N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "293D106X9050E2TE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/293d106x9050e2te3/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.vishay.com/doc?40002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "4.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "293D106X9050E2TE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "74-293D106X9050E2TE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=74-293D106X9050E2TE3"; VariantName = "[No Variations]"
+Added Component: Designator=C2(KEMET_C0805C-DN_IPC_B)
+Added Component: Designator=C3(KEMET_C0805C-DN_IPC_B)
+Added Component: Designator=C4(Kemet_0_MFG)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "293D106X9050E2TE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/293d106x9050e2te3/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.vishay.com/doc?40002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "4.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "293D106X9050E2TE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "74-293D106X9050E2TE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=74-293D106X9050E2TE3"; VariantName = "[No Variations]"
+Added Component: Designator=C5(KEMET_C0805C-DN_IPC_B)
+Added Component: Designator=C6(KEMET_C0805C-DN_IPC_B)
+Added Component: Designator=C7(KEMET_C0805C-DN_IPC_B)
+Added Component: Designator=C8(KEMET_C0805C-DN_IPC_B)
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=NetC1_1 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetC1_1 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Member To Class: ClassName=Main_board Member=Component C1 293D106X9050E2TE3
+Added Member To Class: ClassName=Main_board Member=Component C2 C0805C224K5RACTU
+Added Member To Class: ClassName=Main_board Member=Component C3 C0805C224K5RACTU
+Added Member To Class: ClassName=Main_board Member=Component C4 293D106X9050E2TE3
+Added Member To Class: ClassName=Main_board Member=Component C5 C0805C224K5RACTU
+Added Member To Class: ClassName=Main_board Member=Component C6 C0805C224K5RACTU
+Added Member To Class: ClassName=Main_board Member=Component C7 C0805C224K5RACTU
+Added Member To Class: ClassName=Main_board Member=Component C8 C0805C224K5RACTU
+Added Member To Class: ClassName=Main_board Member=Component K? G6S-2-DC24

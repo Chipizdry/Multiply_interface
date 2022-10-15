@@ -1,0 +1,20 @@
+.1N5349BRLG :1 ;Zener Diode, 12V 5% 5 W Through Hole 2-pin DO-15
+DIOAD2260W109L864D349
+*STM Z
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN 1N5349BRLG
+~!Manufacturer_Name (onsemi)
+~!Manufacturer_Part_Number (1N5349BRLG)
+~!Mouser Part Number (863-1N5349BRLG)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/onsemi/1N5349BRLG?qs=y2kkmE52mdPPPvJa3zV6XA%3D%3D)
+~!Arrow Part Number (1N5349BRLG)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/1n5349brlg/on-semiconductor?region=nac)
+~!Mouser Testing Part Number (-)
+~!Mouser Testing Price/Stock (-)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-3/sf-00075052.pdf)
+~!Height (-)
+~!3D_Model (1N5349BRLG)
+"1N5349BRLG"
+1.1!U 2.1!U 

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "G6S-2-DC24"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-04-20-14:13:13)
+    (mountForm default
+        (footprintRef "G6S2DC12")
+        (spec "System")
+    )
+)

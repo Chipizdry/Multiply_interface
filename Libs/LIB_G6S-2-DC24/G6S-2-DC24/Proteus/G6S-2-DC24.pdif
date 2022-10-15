@@ -1,0 +1,199 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "G6S-2-DC24"
+   (description "Low Signal Relays - PCB ThruHole NonLatch 2A DPDT 24VDC 140mW")
+   (family "RLY")
+   (package "G6S2DC12")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/1/G6S-2-DC12.pdf")
+   (attribute "Geometry.Height" "9.4mm")
+   (attribute "Manufacturer_Name" "Omron Electronics")
+   (attribute "Manufacturer_Part_Number" "G6S-2-DC24")
+   (attribute "Mouser Part Number" "653-G6S-2-DC24")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6S-2-DC24?qs=Pjd0UV7BHP8mvxbMA97mrw%3D%3D")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (attribute "Mouser Testing Part Number" "")
+   (attribute "Mouser Testing Price/Stock" "")
+   (gate
+    (symbol "G6S-2-DC24")
+    (pin "+" 1 PS)
+    (pin "NC_1" 3 PS)
+    (pin "COM_1" 4 PS)
+    (pin "NO_1" 5 PS)
+    (pin "NO_2" 8 PS)
+    (pin "COM_2" 9 PS)
+    (pin "NC_2" 10 PS)
+    (pin "-" 12 PS)
+   )
+  )
+  (symbol "G6S-2-DC24"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "G6S2DC12"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.05 6.19)
+      (pt 13.75 6.19)
+      (pt 13.75 -1.11)
+      (pt -1.05 -1.11)
+      (pt -1.05 6.19))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.05 1.54)
+      (pt -1.05 1.54)
+      (pt -1.05 3.54)
+      (pt -1.05 3.54)
+      (pt -1.05 1.54))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 1.5 -1.11)
+      (pt 3.5 -1.11)
+      (pt 3.5 -1.11)
+      (pt 1.5 -1.11)
+      (pt 1.5 -1.11))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 1.5 6.19)
+      (pt 3.5 6.19)
+      (pt 3.5 6.19)
+      (pt 1.5 6.19)
+      (pt 1.5 6.19))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 11.75 6.19)
+      (pt 13.75 6.19)
+      (pt 13.75 6.19)
+      (pt 11.75 6.19)
+      (pt 11.75 6.19))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 13.75 6.19)
+      (pt 13.75 6.19)
+      (pt 13.75 -1.11)
+      (pt 13.75 -1.11)
+      (pt 13.75 6.19))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 13.75 -1.11)
+      (pt 11.75 -1.11)
+      (pt 11.75 -1.11)
+      (pt 13.75 -1.11)
+      (pt 13.75 -1.11))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.05 -3.25)
+      (pt 14.75 -3.25)
+      (pt 14.75 7.19)
+      (pt -2.05 7.19)
+      (pt -2.05 -3.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -0.1 -2.2)
+      (arc (pt -0.100 -2.200) (pt -0.100 -2.150) (pt 0.000 -2.250) (start 180.0) (sweep 180.0))
+      (pt 0 -2.2)
+      (arc (pt 0.000 -2.200) (pt -0.100 -2.150) (pt 0.000 -2.250) (start 180.0) (sweep .0))
+      (pt -0.1 -2.2)
+      (arc (pt -0.100 -2.200) (pt -0.100 -2.150) (pt 0.000 -2.250) (start 180.0) (sweep 180.0))
+      (pt 0 -2.2))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 3 (pt 5.080 0.000) (padstack 0))
+   (leg 4 (pt 7.620 0.000) (padstack 0))
+   (leg 5 (pt 10.160 0.000) (padstack 0))
+   (leg 8 (pt 10.160 5.080) (padstack 0))
+   (leg 9 (pt 7.620 5.080) (padstack 0))
+   (leg 10 (pt 5.080 5.080) (padstack 0))
+   (leg 12 (pt 0.000 5.080) (padstack 0))
+   (padstack 0
+    (hole 1)
+    (plated true)
+    (pad (layer TCOP) (round 1.500))
+    (pad (layer INNER) (round 1.500))
+    (pad (layer BCOP) (round 1.500))
+   )
+   (model "G6S-2-DC24.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

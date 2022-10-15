@@ -41,7 +41,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=PCB2.PcbDoc
+DocumentPath=Libs\Relay_TE Connectivity_V23079A1001B301\parts\Relay_TE_Connectivity_V23079A1001B301_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -55,10 +55,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=YXTIQKQG
+DocumentUniqueId=NLMSSNRB
 
 [Document2]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\IC_Infineon_BTN7970B\parts\Infineon_BTN7970B_0.PcbLib
+DocumentPath=..\..\AltiumLL\SamacSys.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -72,10 +72,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=EBEBLMJS
+DocumentUniqueId=NGLTGAHM
 
 [Document3]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\IC_Infineon_BTN7970B\parts\Infineon_BTN7970B.SchLib
+DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -89,10 +89,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HCGGIKUI
+DocumentUniqueId=CUPKJGQI
 
 [Document4]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Conn_Wurth_61300611121\parts\Conn_Wurth_61300611121_eec.SchLib
+DocumentPath=Libs\Conn_Wurth_61300611121\parts\Conn_Wurth_61300611121_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -109,24 +109,7 @@ GenerateClassCluster=0
 DocumentUniqueId=FAQUMONX
 
 [Document5]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Conn_Wurth_61300611121\parts\Conn_Wurth_61300611121_eec_0.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MCXPRYNE
-
-[Document6]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Cap_Kemet_T491B106K025AT\parts\Cap_Kemet_T491B106K025AT_eec.SchLib
+DocumentPath=Libs\Cap_Kemet_T491B106K025AT\parts\Cap_Kemet_T491B106K025AT_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -142,161 +125,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LXWRVDSH
 
-[Document7]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Cap_Kemet_T491B106K025AT\parts\Cap_Kemet_T491B106K025AT_eec_MFG.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ATNBBEHU
-
-[Document8]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Diode_Nexperia USA Inc._PESD5Z3.3,115\parts\Diode_TVS_PESD5Z3.3,115.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FRCJQVWW
-
-[Document9]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Conn_Sullins_SWR25X-NRTC-S06-ST-BA\parts\Conn_Sullins_SWR25X-NRTC-S06-ST-BA_eec.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JKERUKGD
-
-[Document10]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Diode_Vishay_1N4148W-HE3-08\parts\Diode_Vishay_1N4148W-HE3-08_eec_IPC_B.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FFBKISUF
-
-[Document11]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Conn_Sullins_SWR25X-NRTC-S06-ST-BA\parts\Conn_Sullins_SWR25X-NRTC-S06-ST-BA_eec_MFG.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=CSHXDPKU
-
-[Document12]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Conn_Molex_22-23-2061\parts\Conn_Molex_22-23-2061_eec_0.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=YBLBRECL
-
-[Document13]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Conn_Molex_22-23-2061\parts\Conn_Molex_22-23-2061_eec.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KKBUQNKX
-
-[Document14]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_B.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MDJJVIAA
-
-[Document15]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Diode_Nexperia USA Inc._PESD5Z3.3,115\parts\Diode_Nexperia_USA_Inc._PESD5Z3.3,115_eec_0.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=DIVVAGBK
-
-[Document16]
-DocumentPath=..\..\..\..\..\Администратор\Documents\AltiumLL\SamacSys.SchLib
+[Document6]
+DocumentPath=Libs\AltiumLL\SamacSys.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -312,8 +142,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGLTGAHM
 
-[Document17]
-DocumentPath=..\..\..\..\..\Администратор\Documents\AltiumLL\SamacSys.PcbLib
+[Document7]
+DocumentPath=Libs\Relay_TE Connectivity_V23079A1001B301\parts\Relay_TE_Connectivity_V23079A1001B301_eec_Recommended_Land_Pattern .PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PNOWBMSB
+
+[Document8]
+DocumentPath=Libs\AltiumLL\SamacSys.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -329,8 +176,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
-[Document18]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Diode_On Semiconductor_MMBZ12VALT1G\parts\On_Semiconductor_MMBZ12VALT1G.SchLib
+[Document9]
+DocumentPath=PCB2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -344,10 +191,163 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=GUTMLXJQ
+DocumentUniqueId=YXTIQKQG
+
+[Document10]
+DocumentPath=Libs\Diode_On Semiconductor_BAT54ALT1G\parts\Diode_On_Semiconductor_BAT54ALT1G_eec_IPC_B.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YNVHWLEC
+
+[Document11]
+DocumentPath=Libs\Conn_Wurth_61300611121\parts\Conn_Wurth_61300611121_eec_0.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MCXPRYNE
+
+[Document12]
+DocumentPath=..\..\AltiumLL\SamacSys.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MPRJBCLL
+
+[Document13]
+DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_B.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MDJJVIAA
+
+[Document14]
+DocumentPath=Libs\ul_BC847BLT1G\AltiumDesigner\2022-08-03_09-51-05\BC847BLT1G.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=EAHTKJAU
+
+[Document15]
+DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_MFG.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=WVWRTILE
+
+[Document16]
+DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_C.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MVBRAYEB
+
+[Document17]
+DocumentPath=Libs\Cap_Kemet_T491B106K025AT\parts\Cap_Kemet_T491B106K025AT_eec_MFG.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ATNBBEHU
+
+[Document18]
+DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_A.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GKGMGULD
 
 [Document19]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Diode_On Semiconductor_MMBZ12VALT1G\parts\On_Semiconductor_MMBZ12VALT1G_0.PcbLib
+DocumentPath=Libs\Conn_Sullins_SWR25X-NRTC-S06-ST-BA\parts\Conn_Sullins_SWR25X-NRTC-S06-ST-BA_eec_MFG.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -361,10 +361,27 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=UMODDHGE
+DocumentUniqueId=CSHXDPKU
 
 [Document20]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Diode_On Semiconductor_BAT54ALT1G\parts\Diode_BAT54C___.SchLib
+DocumentPath=Libs\Res_Vishay_CRCW08050000Z0EA\Res_Vishay_CRCW08050000Z0EA_eec_IPC_B.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MYBMFNJF
+
+[Document21]
+DocumentPath=Libs\Diode_On Semiconductor_BAT54ALT1G\parts\Diode_BAT54C___.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -380,25 +397,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KIQTSHRX
 
-[Document21]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Trans_Infineon_BC847C\parts\Infineon_BC847C_1.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=YFRERVIX
-
 [Document22]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\Trans_Infineon_BC847C\parts\Infineon_BC847C.SchLib
+DocumentPath=Libs\Conn_Sullins_SWR25X-NRTC-S06-ST-BA\parts\Conn_Sullins_SWR25X-NRTC-S06-ST-BA_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -412,10 +412,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TYMPJJXS
+DocumentUniqueId=JKERUKGD
 
 [Document23]
-DocumentPath=IRF9362.SchLib
+DocumentPath=Libs\Res_Vishay_CRCW08050000Z0EA\Res_Vishay_CRCW08050000Z0EA_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -429,10 +429,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=QLEGTDXT
+DocumentUniqueId=UOKIUUFH
 
 [Document24]
-DocumentPath=..\..\..\..\..\Администратор\Downloads\Библиотеки Altium\IRF9362PBF\IRF9362PBF.IntLib
+DocumentPath=Libs\ul_STM32L031K6T6 (1)\AltiumDesigner\2022-07-04_09-04-56\STM32L031K6T6.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -446,7 +446,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OXEOQPIC
 
 [Document25]
 DocumentPath=Main_board.SchDoc
@@ -455,7 +455,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -463,7 +463,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=UOFPJSOM
+DocumentUniqueId=JXKQWGPF
 
 [Configuration1]
 Name=Sources
@@ -1028,36 +1028,6 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Ansoft Neutral
-OutputName12=Ansoft Neutral (AutoPCB)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=HyperLynx
-OutputName13=HyperLynx (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Orcad v7 Capture Design
-OutputName14=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD ASCII
-OutputName15=P-CAD ASCII (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=P-CAD V16 Schematic Design
-OutputName16=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs

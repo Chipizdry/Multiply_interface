@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP G6S-2-DC24
+D Low Signal Relays - PCB ThruHole NonLatch 2A DPDT 24VDC 140mW
+K
+F https://componentsearchengine.com/Datasheets/1/G6S-2-DC12.pdf
+$ENDCMP
+#
+#End Doc Library

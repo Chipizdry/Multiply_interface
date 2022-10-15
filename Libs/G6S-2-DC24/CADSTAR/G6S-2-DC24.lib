@@ -1,0 +1,20 @@
+.G6S-2-DC24 :1 ;Low Signal Relays - PCB ThruHole NonLatch 2A DPDT 24VDC 140mW
+G6S2DC12
+*STM K
+*NGS
+*PLB 1="+" 3="NC_1" 4="COM_1" 5="NO_1" 8="NO_2" 9="COM_2" 10="NC_2" 12="-"
+*MXP 8
+*DFN G6S-2-DC24
+~!Manufacturer_Name (Omron Electronics)
+~!Manufacturer_Part_Number (G6S-2-DC24)
+~!Mouser Part Number (653-G6S-2-DC24)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6S-2-DC24?qs=Pjd0UV7BHP8mvxbMA97mrw%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Mouser Testing Part Number (-)
+~!Mouser Testing Price/Stock (-)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/G6S-2-DC12.pdf)
+~!Height (9.4mm)
+~!3D_Model (G6S-2-DC24)
+G6S-2-DC24
+1.1!U 3.1!U 4.1!U 5.1!U 8.1!U 9.1!U 10.1!U 12.1!U 

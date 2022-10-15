@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=C?-2
-Removed Pin From Net: NetName=NetC7_1 Pin=D?-1
-Removed Pin From Net: NetName=NetC1_1 Pin=D?-2
-Removed Pin From Net: NetName=NetR9_1 Pin=R?-1
-Removed Pin From Net: NetName=NetR9_1 Pin=R?-2
-Change Component Footprint: Designator=D1 Old Footprint=INF-SOT23_L New Footprint=INF-SOT23_L
-Change Component Footprint: Designator=D10 Old Footprint=INF-SOT23_L New Footprint=INF-SOT23_L
-Change Component Footprint: Designator=U3 Old Footprint=M08A_L New Footprint=M08A_L
-Change Component Footprint: Designator=D2 Old Footprint=ONSC-SOT-23-3-318-08_V New Footprint=ONSC-SOT-23-3-318-08_V

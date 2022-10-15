@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '61300611121'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Wurth Elektronik", "61300611121" (!) = "", "HDRV6W64P0X254_1X6_1524X254X869P", "Header, Vertical", "710-61300611121", "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/61300611121?qs=t4813l51qx%2FRpdf0Kp1HlQ%3D%3D", "", "", "WR-PHD 2.54mm Pin Header THT Straight 6p Wurth Elektronik WR-PHD Series, Series Number 6130, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Cable Mount", "https://componentsearchengine.com/Datasheets/2/61300611121.pdf", "8.69 mm"
+END_PART
+
+END.
