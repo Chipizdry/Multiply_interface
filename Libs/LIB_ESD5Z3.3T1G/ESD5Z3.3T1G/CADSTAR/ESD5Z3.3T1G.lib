@@ -1,0 +1,20 @@
+.ESD5Z3.3T1G :1 ;TVS Diode Uni-Direct. 240W 3.3V SOD-523 ON Semiconductor ESD5Z3.3T1G Uni-Directional TVS Diode, 200W peak, 2-Pin SOD-523
+SODFL1608X70N
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN ESD5Z3.3T1G
+~!Manufacturer_Name (onsemi)
+~!Manufacturer_Part_Number (ESD5Z3.3T1G)
+~!Mouser Part Number (863-ESD5Z3.3T1G)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/onsemi/ESD5Z3.3T1G?qs=OSf9jACorvaH3Y8oRWEcuQ%3D%3D)
+~!Arrow Part Number (ESD5Z3.3T1G)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/esd5z3.3t1g/on-semiconductor?region=nac)
+~!Mouser Testing Part Number (-)
+~!Mouser Testing Price/Stock (-)
+~!Link Datasheet (http://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF)
+~!Height (0.7mm)
+~!3D_Model (ESD5Z3.3T1G)
+ESD5Z3.3T1G
+1.1!U 2.1!U 

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ESD5Z3.3T1G'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_TESTING_PART_NUMBER", "MOUSER_TESTING_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "onsemi", "ESD5Z3.3T1G" (!) = "", "SODFL1608X70N", "Small Outline Diode Flat Lead", "863-ESD5Z3.3T1G", "https://www.mouser.co.uk/ProductDetail/onsemi/ESD5Z3.3T1G?qs=OSf9jACorvaH3Y8oRWEcuQ%3D%3D", "ESD5Z3.3T1G", "https://www.arrow.com/en/products/esd5z3.3t1g/on-semiconductor?region=nac", "", "", "TVS Diode Uni-Direct. 240W 3.3V SOD-523 ON Semiconductor ESD5Z3.3T1G Uni-Directional TVS Diode, 200W peak, 2-Pin SOD-523", "http://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF", "0.7 mm"
+END_PART
+
+END.

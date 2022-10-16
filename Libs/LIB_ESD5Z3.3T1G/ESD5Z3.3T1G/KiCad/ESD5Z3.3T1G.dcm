@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESD5Z3.3T1G
+D TVS Diode Uni-Direct. 240W 3.3V SOD-523 ON Semiconductor ESD5Z3.3T1G Uni-Directional TVS Diode, 200W peak, 2-Pin SOD-523
+K
+F http://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF
+$ENDCMP
+#
+#End Doc Library
