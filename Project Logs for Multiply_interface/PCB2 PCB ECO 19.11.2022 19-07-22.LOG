@@ -1,0 +1,6 @@
+Added Component: Designator=K1(TE_Connectivity_V23079A1001B301_Recommended_Land_Pattern)
+Added Component: Designator=R10(Vishay_CRCW0603-e3_IPC_A)
+Added Pin To Net: NetName=NetR10_1 Pin=R10-1
+Added Pin To Net: NetName=NetD4_1 Pin=R10-2
+Added Member To Class: ClassName=Main_board Member=Component K1 V23079A1001B301
+Added Member To Class: ClassName=Main_board Member=Component R10 620k

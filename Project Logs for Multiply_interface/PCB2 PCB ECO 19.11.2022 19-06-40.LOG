@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=R10 Old Footprint=Vishay_CRCW0805-e3_IPC_B New Footprint=Vishay_CRCW0603-e3_IPC_A
+Added Component: Designator=K1(TE_Connectivity_V23079A1001B301_Recommended_Land_Pattern)
+Added Pin To Net: NetName=NetU1_10 Pin=U1-10
+Added Net: Name=NetU1_10
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11
+Added Net: Name=NetU1_11
+Added Member To Class: ClassName=Main_board Member=Component K1 V23079A1001B301

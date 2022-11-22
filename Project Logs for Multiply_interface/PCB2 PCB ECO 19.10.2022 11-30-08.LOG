@@ -1,0 +1,6 @@
+Added Component: Designator=K1(TE_Connectivity_V23079A1001B301_Recommended_Land_Pattern)
+Added Pin To Net: NetName=NetJ4_3 Pin=U1-18
+Added Pin To Net: NetName=NetJ4_2 Pin=U1-19
+Added Pin To Net: NetName=NetJ4_4 Pin=U1-29
+Added Pin To Net: NetName=NetJ4_5 Pin=U1-30
+Added Member To Class: ClassName=Main_board Member=Component K1 V23079A1001B301

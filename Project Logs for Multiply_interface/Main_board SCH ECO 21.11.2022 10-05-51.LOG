@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=R1 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=6-0805_M
+Change Component Footprint: Designator=R2 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=6-0805_M
+Change Component Footprint: Designator=R6 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=6-0805_M
+Change Component Footprint: Designator=R7 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=6-0805_M
+Change Component Footprint: Designator=R13 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=6-0805_M
+Change Component Footprint: Designator=R17 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=6-0805_M
+Change Component Footprint: Designator=R12 Old Footprint=Vishay_CRCW0603-e3_IPC_A New Footprint=Vishay_CRCW0805-e3_IPC_B
+Change Component Footprint: Designator=R15 Old Footprint=Vishay_CRCW0805-e3_IPC_B New Footprint=6-0805_M
+Change Component Comment: Designator=R17 Old Comment=1K New Comment=RC0805FR-07100KL
+Change Component Comment: Designator=R12 Old Comment=100K New Comment=RC0805FR-07100KL
+Change Component Comment: Designator=R13 Old Comment=100K New Comment=RC0805FR-07100KL

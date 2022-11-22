@@ -1,0 +1,8 @@
+Added Component: Designator=R1(Vishay_CRCW0603-e3_IPC_A)
+Added Component: Designator=R3(Vishay_CRCW0603-e3_IPC_A)
+Added Pin To Net: NetName=NetC2_1 Pin=R1-1
+Added Pin To Net: NetName=NetC1_1 Pin=R1-2
+Added Pin To Net: NetName=NetC6_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Member To Class: ClassName=Main_board Member=Component R1 10K
+Added Member To Class: ClassName=Main_board Member=Component R3 470
