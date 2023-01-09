@@ -1,0 +1,4 @@
+Added Component: Designator=R8(Vishay_CRCW0603-e3_IPC_A)
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Member To Class: ClassName=Main_board Member=Component R8 RC0805FR-07100KL
