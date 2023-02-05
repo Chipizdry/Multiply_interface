@@ -1,8 +1,0 @@
-Added Component: Designator=R18(Vishay_CRCW0603-e3_IPC_A)
-Added Component: Designator=R19(Vishay_CRCW0603-e3_IPC_A)
-Added Pin To Net: NetName=NetD9_2 Pin=R18-1
-Added Pin To Net: NetName=NetR18_2 Pin=R18-2
-Added Pin To Net: NetName=NetD10_2 Pin=R19-1
-Added Pin To Net: NetName=NetR19_2 Pin=R19-2
-Added Member To Class: ClassName=Main_board Member=Component R18 200
-Added Member To Class: ClassName=Main_board Member=Component R19 200

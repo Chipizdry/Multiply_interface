@@ -1,8 +1,0 @@
-Added Component: Designator=R1(6-0805_M)
-Added Component: Designator=R3(6-0805_L)
-Added Pin To Net: NetName=NetC2_1 Pin=R1-1
-Added Pin To Net: NetName=NetC1_1 Pin=R1-2
-Added Pin To Net: NetName=NetC6_1 Pin=R3-1
-Added Pin To Net: NetName=NetR3_2 Pin=R3-2
-Added Member To Class: ClassName=Main_board Member=Component R1 10K
-Added Member To Class: ClassName=Main_board Member=Component R3 RC0805FR-07100KL
