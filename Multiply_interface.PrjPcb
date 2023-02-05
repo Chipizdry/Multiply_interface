@@ -41,6 +41,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=Libs\2.54_Connector_x6.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OWESDTTA
+
+[Document2]
 DocumentPath=..\..\..\Downloads\Библиотеки Altium\Res_Vishay_CRCW06031K00FKEA\parts\Res_Vishay_CRCW06031K00FKEA_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -57,7 +74,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VIFNDUZI
 
-[Document2]
+[Document3]
 DocumentPath=Libs\Relay_TE Connectivity_V23079A1001B301\parts\Relay_TE_Connectivity_V23079A1001B301_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -74,7 +91,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NLMSSNRB
 
-[Document3]
+[Document4]
 DocumentPath=..\..\AltiumLL\SamacSys.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -91,7 +108,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGLTGAHM
 
-[Document4]
+[Document5]
 DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -108,7 +125,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CUPKJGQI
 
-[Document5]
+[Document6]
 DocumentPath=Libs\Conn_Wurth_61300611121\parts\Conn_Wurth_61300611121_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -125,7 +142,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FAQUMONX
 
-[Document6]
+[Document7]
 DocumentPath=Libs\LED\Diode_Wurth_Electronics_150080SS75000_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -142,7 +159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XCPGYQKH
 
-[Document7]
+[Document8]
 DocumentPath=Libs\Cap_Kemet_T491B106K025AT\parts\Cap_Kemet_T491B106K025AT_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -159,7 +176,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LXWRVDSH
 
-[Document8]
+[Document9]
 DocumentPath=Libs\AltiumLL\SamacSys.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -176,7 +193,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGLTGAHM
 
-[Document9]
+[Document10]
 DocumentPath=..\..\..\Downloads\Библиотеки Altium\Res_Vishay_CRCW06031K00FKEA\parts\Res_Vishay_CRCW06031K00FKEA_eec_IPC_A.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -193,7 +210,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YGBYFJYJ
 
-[Document10]
+[Document11]
 DocumentPath=Libs\LED\Diode_Wurth_Electronics_150080SS75000_eec_MFG.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -210,7 +227,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SFABURAD
 
-[Document11]
+[Document12]
 DocumentPath=Libs\Relay_TE Connectivity_V23079A1001B301\parts\Relay_TE_Connectivity_V23079A1001B301_eec_Recommended_Land_Pattern .PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -227,7 +244,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PNOWBMSB
 
-[Document12]
+[Document13]
 DocumentPath=Libs\AltiumLL\SamacSys.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -244,7 +261,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
-[Document13]
+[Document14]
 DocumentPath=PCB2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -261,7 +278,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YXTIQKQG
 
-[Document14]
+[Document15]
 DocumentPath=Libs\Diode_On Semiconductor_BAT54ALT1G\parts\Diode_On_Semiconductor_BAT54ALT1G_eec_IPC_B.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -278,7 +295,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YNVHWLEC
 
-[Document15]
+[Document16]
 DocumentPath=Libs\Conn_Wurth_61300611121\parts\Conn_Wurth_61300611121_eec_0.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -295,7 +312,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MCXPRYNE
 
-[Document16]
+[Document17]
 DocumentPath=..\..\AltiumLL\SamacSys.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -312,7 +329,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
-[Document17]
+[Document18]
 DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_B.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -329,7 +346,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MDJJVIAA
 
-[Document18]
+[Document19]
 DocumentPath=Libs\ul_BC847BLT1G\AltiumDesigner\2022-08-03_09-51-05\BC847BLT1G.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -346,7 +363,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EAHTKJAU
 
-[Document19]
+[Document20]
 DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_MFG.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -363,7 +380,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WVWRTILE
 
-[Document20]
+[Document21]
 DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_C.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -380,7 +397,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MVBRAYEB
 
-[Document21]
+[Document22]
 DocumentPath=Libs\LED\Diode_Wurth_Electronics_150080SS75000_eec_MFG(yellow).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -397,7 +414,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SFABURAD
 
-[Document22]
+[Document23]
 DocumentPath=..\..\..\..\Public\Documents\Altium\Projects\CP2102N-UART\IC_Silicon_Labs_CP2102N-A02-GQFN28R_eec_IPC_A.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -414,7 +431,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NVESKPTM
 
-[Document23]
+[Document24]
 DocumentPath=Libs\Cap_Kemet_T491B106K025AT\parts\Cap_Kemet_T491B106K025AT_eec_MFG.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -431,7 +448,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ATNBBEHU
 
-[Document24]
+[Document25]
 DocumentPath=Libs\LED\Diode_Wurth_Electronics_150080SS75000_eec_MFG(green).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -448,7 +465,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GWQSEBKG
 
-[Document25]
+[Document26]
 DocumentPath=Libs\LED\Diode_Wurth_Electronics_150080SS75000_eec_MFG(blue).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -465,7 +482,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RRPCWRSG
 
-[Document26]
+[Document27]
 DocumentPath=Libs\Cap_KEMET_C0805C224K5RACTU\parts\Cap_KEMET_C0805C224K5RACTU_eec_IPC_A.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -482,7 +499,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GKGMGULD
 
-[Document27]
+[Document28]
 DocumentPath=Libs\Conn_Sullins_SWR25X-NRTC-S06-ST-BA\parts\Conn_Sullins_SWR25X-NRTC-S06-ST-BA_eec_MFG.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -499,7 +516,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CSHXDPKU
 
-[Document28]
+[Document29]
 DocumentPath=Libs\Res_Vishay_CRCW08050000Z0EA\Res_Vishay_CRCW08050000Z0EA_eec_IPC_B.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -516,7 +533,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MYBMFNJF
 
-[Document29]
+[Document30]
 DocumentPath=Libs\Diode_On Semiconductor_BAT54ALT1G\parts\Diode_BAT54C___.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -533,7 +550,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KIQTSHRX
 
-[Document30]
+[Document31]
 DocumentPath=Libs\Conn_Sullins_SWR25X-NRTC-S06-ST-BA\parts\Conn_Sullins_SWR25X-NRTC-S06-ST-BA_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -550,7 +567,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JKERUKGD
 
-[Document31]
+[Document32]
 DocumentPath=Libs\Res_Vishay_CRCW08050000Z0EA\Res_Vishay_CRCW08050000Z0EA_eec.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -567,7 +584,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UOKIUUFH
 
-[Document32]
+[Document33]
 DocumentPath=Libs\ul_STM32L031K6T6 (1)\AltiumDesigner\2022-07-04_09-04-56\STM32L031K6T6.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -584,7 +601,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OXEOQPIC
 
-[Document33]
+[Document34]
 DocumentPath=Main_board.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
