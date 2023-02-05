@@ -1,0 +1,81 @@
+Change Component Designator: OldDesignator=D? NewDesignator=D11
+Change Component Designator: OldDesignator=D? NewDesignator=D12
+Change Component Designator: OldDesignator=J? NewDesignator=J7
+Change Component Designator: OldDesignator=Q? NewDesignator=Q3
+Change Component Designator: OldDesignator=Q? NewDesignator=Q4
+Change Component Designator: OldDesignator=Q? NewDesignator=Q5
+Change Component Designator: OldDesignator=R? NewDesignator=R21
+Change Component Designator: OldDesignator=R? NewDesignator=R22
+Change Component Designator: OldDesignator=R? NewDesignator=R23
+Change Component Designator: OldDesignator=R? NewDesignator=R24
+Change Component Designator: OldDesignator=R? NewDesignator=R25
+Change Component Designator: OldDesignator=R? NewDesignator=R26
+Added Component: Designator=J8(691103110003)
+Add component (AddParameter): Name = "Application"; Value = "Pressure Clamp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Terminal Blocks"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/691103110003?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/691103110003?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "691103110003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-TBL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Modularity"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Horizontal"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB/Cable/Panel"; Value = "PCB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Number"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "125V"; VariantName = "[No Variations]"
+Added Component: Designator=J9(691103110003)
+Add component (AddParameter): Name = "Application"; Value = "Pressure Clamp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Terminal Blocks"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/691103110003?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/691103110003?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "691103110003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-TBL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Modularity"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Horizontal"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB/Cable/Panel"; Value = "PCB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Number"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "125V"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetD?_1 New Net Name=NetD12_1
+Change Net Name : Old Net Name=NetJ?_1 New Net Name=NetJ7_1
+Change Net Name : Old Net Name=NetJ?_2 New Net Name=NetJ7_2
+Change Net Name : Old Net Name=NetJ?_3 New Net Name=NetJ7_3
+Change Net Name : Old Net Name=NetJ?_4 New Net Name=NetJ7_4
+Change Net Name : Old Net Name=NetQ?_1 New Net Name=NetQ5_1
+Added Pin To Net: NetName=NetD11_1 Pin=D11-1
+Added Pin To Net: NetName=NetD11_1 Pin=J6-3
+Added Net: Name=NetD11_1
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_1 Pin=R21-1
+Added Pin To Net: NetName=NetQ3_1 Pin=R24-2
+Added Net: Name=NetQ3_1
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=NetQ4_1 Pin=R22-1
+Added Pin To Net: NetName=NetQ4_1 Pin=R25-2
+Added Net: Name=NetQ4_1
+Added Member To Class: ClassName=Main_board Member=Component D11 Diode 1N4148
+Added Member To Class: ClassName=Main_board Member=Component J8 691103110003
+Added Member To Class: ClassName=Main_board Member=Component J9 691103110003
+Added Member To Class: ClassName=Main_board Member=Component Q3 BC847C
+Added Member To Class: ClassName=Main_board Member=Component Q4 BC847C
+Added Member To Class: ClassName=Main_board Member=Component R21 1K
+Added Member To Class: ClassName=Main_board Member=Component R22 1K
+Added Member To Class: ClassName=Main_board Member=Component R23 1K
+Added Member To Class: ClassName=Main_board Member=Component R24 10K
+Added Member To Class: ClassName=Main_board Member=Component R26 10K
