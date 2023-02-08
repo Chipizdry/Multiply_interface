@@ -1,0 +1,54 @@
+Added Component: Designator=C9(KEMET_C0805C-DN_IPC_A)
+Add component (AddParameter): Name = "ComponentDescription"; Value = "Конденсатор керамический SMD, KEMET_C0805C-DN_IPC_A, 50В, 0.1мк, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentType"; Value = "Конденсатор керамический SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "KEMET_C0805C-DN_IPC_A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C10(KEMET_C0805C-DN_IPC_A)
+Add component (AddParameter): Name = "ComponentDescription"; Value = "Конденсатор керамический SMD, KEMET_C0805C-DN_IPC_A, 50В, 0.1мк, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentType"; Value = "Конденсатор керамический SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "KEMET_C0805C-DN_IPC_A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C11(KEMET_C0805C-DN_MFG)
+Add component (AddParameter): Name = "ComponentDescription"; Value = "Конденсатор керамический SMD, KEMET_C0805C-DN_MFG, 50В, 1мк, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentType"; Value = "Конденсатор керамический SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "KEMET_C0805C-DN_MFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=R27(Vishay_CRCW0603-e3_IPC_A)
+Add component (AddParameter): Name = "ComponentDescription"; Value = "Резистор SMD, Vishay_CRCW0603-e3_IPC_A, 10кОм, 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentType"; Value = "Резистор SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Vishay_CRCW0603-e3_IPC_A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10к"; VariantName = "[No Variations]"
+Added Component: Designator=VT1(SOT23-3_ONS-L)
+Add component (AddParameter): Name = "ChannelType"; Value = "NPN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentDescription"; Value = "Транзистор биполярный, NPN, BC847, SOT23-3_ONS-L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentType"; Value = "Транзистор биполярный"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3_ONS-L"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND_II Pin=C9-2
+Added Pin To Net: NetName=NetJ7_1 Pin=C10-1
+Added Pin To Net: NetName=GND_II Pin=C10-2
+Added Pin To Net: NetName=NetJ7_1 Pin=C11-1
+Added Pin To Net: NetName=GND_II Pin=C11-2
+Added Pin To Net: NetName=NetJ7_1 Pin=VT1-3
+Change Net Name : Old Net Name=NetJ7_1 New Net Name=NetC10_1
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC9_1 Pin=R27-2
+Added Pin To Net: NetName=NetC9_1 Pin=VT1-2
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetD11_2 Pin=D11-2
+Added Pin To Net: NetName=NetD11_2 Pin=D12-2
+Added Net: Name=NetD11_2
+Added Pin To Net: NetName=NetR27_1 Pin=R27-1
+Added Pin To Net: NetName=NetR27_1 Pin=VT1-1
+Added Net: Name=NetR27_1
+Added Member To Class: ClassName=Main_board Member=Component C9 0.1мк
+Added Member To Class: ClassName=Main_board Member=Component C10 0.1мк
+Added Member To Class: ClassName=Main_board Member=Component C11 1мк
+Added Member To Class: ClassName=Main_board Member=Component R27 10к
+Added Member To Class: ClassName=Main_board Member=Component VT1 BC847
