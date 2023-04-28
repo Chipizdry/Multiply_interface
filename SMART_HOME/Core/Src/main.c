@@ -103,14 +103,15 @@ uint16_t inp_1=0;
 uint16_t inp_2=0;
 uint16_t inp_3=0;
 uint16_t inp_4=0;
+uint8_t alarm=0;
 char str[58]={0, };
-uint8_t rcvd[178]={0,};
+uint8_t rcvd[198]={0,};
 uint8_t count=0;
 uint8_t rcv_addres=0;
 uint8_t addres_call=0;
 uint8_t directive=0;
-uint8_t addres=11;
-uint8_t Device_ID=157;//108 БСА
+uint8_t addres=13;
+uint8_t Device_ID=159;//108 БСА
 uint8_t temp_ID=0;
 /* USER CODE END PV */
 
@@ -131,6 +132,116 @@ void Print_test(void){
 	 HAL_UART_Transmit_DMA(&huart1, str, sizeof(str));
 
 }
+
+void Protocol(void){
+	           //  if ((count==9)&&(alarm=1)){OWR_ON;}
+             	 if (count==13){OWR_ON;}//count==14-alarm
+	        	 if (count==22){OWR_ON;}
+	        	 if (count==31){OWR_ON;}
+	        	 if (count==40){OWR_ON;}
+	        	 if (count==49){OWR_ON;}
+	        	 if (count==58){OWR_ON;}
+	        	 if (count==67){OWR_ON;}
+	        	 if (count==76){OWR_ON;}
+	        	 if (count==85){OWR_ON;}
+	        	 if (count==94){OWR_ON;}
+	        	 if (count==103){OWR_ON;}
+	        	 if (count==112){OWR_ON;}
+	        	 if (count==121){OWR_ON;}
+	        	 if (count==130){OWR_ON;}
+	        	 if (count==139){OWR_ON;}
+	        	 if (count==148){OWR_ON;}
+
+
+	        	 if (count==13)
+	        	         	   {  directive=0;
+
+	        	         	     directive|= (rcvd[9]<<4)|(rcvd[10]<<3)|(rcvd[11]<<2)|(rcvd[12]<<1)|(rcvd[13]) ;
+
+
+	        	         	    }
+
+
+	        	         	 switch(directive)
+	        	         			   {
+
+	        	         	 case 6 :
+
+	        	         		 if(count==30){OWR_ON;}
+	        	         	  if(count==45){OWR_ON;}
+	        	            if(count==46)
+	        	           {
+
+	        	          if((rcvd[35]==1)&&(rcvd[42]==1)) {LED1_ON;}
+	        	         if((rcvd[36]==1)&&(rcvd[43]==1)) {LED1_OFF;}
+	        	          if((rcvd[38]==1)&&(rcvd[45]==1)) {}
+	        	         if((rcvd[37]==1)&&(rcvd[44]==1)) {LED2_OFF;}
+	        	         			        	         			   }
+
+
+	        	         	 break;
+
+	        	         	 case 3 :
+
+
+
+	        	         		 if((count>=14)&&(count<22))
+	        	         		        	         	       {
+	        	         		        	         	            temp_ID|=((Device_ID>>(21-count))&(0b1));
+	        	         		        	         	            if(temp_ID==1){OWR_ON;}
+	        	         		        	         	            if(temp_ID==0){OWR_OFF;}
+	        	         		        	         	            temp_ID=0;
+	        	         		        	         	       }
+
+
+
+	        	         	     if((count>=23)&&(count<31)&&(alarm==1))  //Статус прибора.выходов
+	        	         	             	        	      			{
+	        	         	             	        	      				temp_ID|=((1)&(0b1));
+	        	         	             	        	      				if(temp_ID==1){ OWR_ON;}
+	        	         	             	        	      				if(temp_ID==0){ }
+	        	         	             	        	      				temp_ID=0;
+	        	         	            	        	      			}
+	        	         	 //     if((count>=42)&&(count<49)&&(alarm==1))  //Статус прибора.выходов
+	        	         	   //   			{
+	        	         	   //   				temp_ID|=((1)&(0b1));
+	        	         	   //   				if(temp_ID==1){ OWR_ON;}
+	        	         	    //  				if(temp_ID==0){ }
+	        	         	    //  				temp_ID=0;
+	        	         	     // 			}
+	        	              //Тестовый опрос
+	        	         	//      if(count==44){ OWR_ON;}
+
+
+
+
+	        	         	  break;
+
+	        	         	  case 14 :
+
+	        	         			   if(count==30){OWR_ON;}
+	        	         			   if(count==45){OWR_ON;}
+	        	         			   if(count==54){OWR_ON;}
+
+	        	         			   if(count==46)
+	        	         			   {
+
+	        	         				   if((rcvd[35]==1)&&(rcvd[42]==1)) {LED1_ON;}
+	        	         				   if((rcvd[36]==1)&&(rcvd[43]==1)) {LED1_OFF;}
+	        	         				   if((rcvd[38]==1)&&(rcvd[45]==1)) {}
+	        	         				   if((rcvd[37]==1)&&(rcvd[44]==1)) {LED2_OFF;}
+	        	         			   }
+	        	         			   break;
+
+	        	         	 case 0 :
+
+	        	         		 break;
+
+	        	         			   }
+                                  }
+
+
+
 
 void ADC_reset_ch(void){
 
@@ -713,79 +824,45 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
         	 period = HAL_TIM_ReadCapturedValue(&htim1, TIM_CHANNEL_1);
 
         	 TIM1->CNT=0;
+         if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)   {alarm=1;}
         	 OWR_OFF;
-        	 if((count==176)||(period>=150)){
+        	 if((count==192)||(period>=100)){
         		 count=0;}
-
+        	 HAL_PWR_EnableSleepOnExit ();
         	 }
-         HAL_PWR_EnableSleepOnExit ();
+
          }
 
           if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2) // FALLING с HIGH на LOW
                         { pulse = HAL_TIM_ReadCapturedValue(&htim1, TIM_CHANNEL_2);
                         OWR_OFF;
-             if((pulse>55)&&(pulse<60))  {rcvd[count]=2;rcv_addres=0;}
+
+             if((pulse>55)&&(pulse<60))  {count=0;rcvd[count]=2;rcv_addres=0;}
         	 if((pulse>36)&&(pulse<40))  rcvd[count]=1;
         	 if((pulse>16)&&(pulse<21))  rcvd[count]=0;
-        	 if ((count==13)&&(rcv_addres==addres)){OWR_ON;}//count==14-alarm
-        	 if ((count==22)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==31)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==40)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==49)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==58)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==67)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==76)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==85)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==94)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==103)&&(rcv_addres==addres)){OWR_ON;}
-        	 if ((count==112)&&(rcv_addres==addres)){OWR_ON;}
 
-
-        	if (count==13)
-        	   {  directive=0;
-
-        	     directive|= (rcvd[9]<<4)|(rcvd[10]<<3)|(rcvd[11]<<2)|(rcvd[12]<<1)|(rcvd[13]) ;
-        	    }
-        	 switch(directive)
-        			   {
-
-        	 case 0 :
-        		 if ((count==9)&&(rcv_addres==addres)){OWR_ON;}
-        		 if ((count==13)&&(rcv_addres==addres)){OWR_ON;}
-
-        	 break;
-
-        	 case 3 :
-        	      if ((count==9)&&(rcv_addres==addres)){OWR_ON;}
-        	      if ((count==13)&&(rcv_addres==addres)){OWR_ON;}
-
-        	  break;
-
-
-
-        			   }
+        	 if((rcvd[1]==1)&&(rcvd[2]==0)&&(count==2))
+        	        	                        	  {
+        	        	                        		 addres_call=addres_call+1;
+        	        	                        		 if(addres_call==addres)
+        	        	                        		    {OWR_ON;}}
 
         	 if (count==8)
-        	    {
-        	      rcv_addres=0;
-        	      rcv_addres|= (rcvd[1]<<7)|(rcvd[2]<<6)|(rcvd[3]<<5)|(rcvd[4]<<4)|(rcvd[5]<<3)|(rcvd[6]<<2)|(rcvd[7]<<1)|(rcvd[8]) ;
-        	      if(rcv_addres==0){addres_call=0;}
-        	    }
+        	        	    {
+        	        	      rcv_addres=0;
+        	        	      rcv_addres|= (rcvd[1]<<7)|(rcvd[2]<<6)|(rcvd[3]<<5)|(rcvd[4]<<4)|(rcvd[5]<<3)|(rcvd[6]<<2)|(rcvd[7]<<1)|(rcvd[8]);
+        	        	      if(rcv_addres==0){addres_call=0;}
 
-        	 if((rcv_addres==addres)&&(count>=14)&&(count<22)&&(directive==3))
-        	       {
-        	            temp_ID|=((Device_ID>>(21-count))&(0b1));
-        	            if(temp_ID==1){OWR_ON;}
-        	            if(temp_ID==0){OWR_OFF;}
-        	            temp_ID=0;
-        	       };
+        	        	    }
+        	 if((rcv_addres==addres)&&(count>8)){Protocol();}
 
 
         	  count++;
-        	  HAL_PWR_EnableSleepOnExit ();
-        	//  HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
 
+
+        	  HAL_PWR_EnableSleepOnExit ();
                         }
+
      }
 
 
