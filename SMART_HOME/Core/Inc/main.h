@@ -79,6 +79,7 @@ void Error_Handler(void);
 #define REL_3_GPIO_Port GPIOB
 #define REL_4_Pin GPIO_PIN_7
 #define REL_4_GPIO_Port GPIOB
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

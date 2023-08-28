@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: SMART_HOME.elf secondary-outputs
 
 # Tool invocations
-SMART_HOME.elf SMART_HOME.map: $(OBJS) $(USER_OBJS) C:\work\SMART_HOME\STM32F030K6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SMART_HOME.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\work\SMART_HOME\STM32F030K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SMART_HOME.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SMART_HOME.elf SMART_HOME.map: $(OBJS) $(USER_OBJS) C:\Users\chipi\Documents\GitHub\Multiply_interface\SMART_NEW\SMART_HOME\STM32F030K6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SMART_HOME.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\chipi\Documents\GitHub\Multiply_interface\SMART_NEW\SMART_HOME\STM32F030K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SMART_HOME.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
