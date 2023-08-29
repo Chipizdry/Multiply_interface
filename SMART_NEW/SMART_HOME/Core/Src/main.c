@@ -64,7 +64,7 @@
 //#define   BTN  HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0;
 //#define   INP  HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_9);
 
-#define SETTINGS_ADDRESS 0x08003C00
+#define SETTINGS_ADDRESS 0x080059A0
 #define TEMP30_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FFFF7B8))
 #define VDD_CALIB ((uint32_t) (3300))
 #define VDD_APPLI ((uint32_t) (3000))
@@ -109,14 +109,15 @@ uint16_t inp_2=0;
 uint16_t inp_3=0;
 uint16_t inp_4=0;
 uint8_t alarm=0;
-char str[58]={0, };
+char str[38]={0, };
 uint8_t rcvd[248]={0,};
 uint8_t count=0;
 uint8_t rcv_addres=0;
 uint8_t addres_call=0;
 uint8_t directive=0;
-uint8_t addres=0;
-uint8_t Device_ID=159;//108 БСА
+uint8_t addres=3;
+uint8_t new_addres=0;
+uint8_t Device_ID=157;//108 БСА
 uint8_t temp_ID=0;
 uint8_t settings[16]={0,};
 uint8_t line_status=0;
@@ -184,7 +185,7 @@ void Print_test(void){
 
 	//sprintf(str, "\n\r Cnt-%02d,per-%04d,pul-%04d,adr-%04d,dir-%04d\n\r",count,period,pulse,rcv_addres,directive);
 	sprintf(str, "\n\r Cnt-%02d,pul-%04d,adr-%04d,dir-%04d\n\r",count,rcvd[count],rcv_addres,directive);
-	 LED2_ON;
+	// LED2_ON;
 	 HAL_UART_Transmit_DMA(&huart1, str, sizeof(str));
 
 }
@@ -209,6 +210,7 @@ void TCT(void){
 		        	 if (count==139){OWR_ON;}
 		        	 if (count==148){OWR_ON;}
 		        	 if (count==157){OWR_ON;}
+
 }
 
 
@@ -233,10 +235,13 @@ void Protocol(void){
 
 	        	         	case 0 :
                                   TCT();
+                                  if (count==14){OWR_ON;}
+
 	        	            break;
 
 	        	         	case 1 :
 	        	         	      TCT();
+	        	         	     if (count==14){OWR_ON;}
 	        	            break;
 
 	        	         	 case 2 :
@@ -317,6 +322,44 @@ void Protocol(void){
 
 
 	        	         	 break;
+
+	        	         	 case 13 :
+
+	        	         		        	         		 if(count==30){OWR_ON;}
+	        	         		        	         	  if(count==45){OWR_ON;}
+	        	         		        	         	 if(count==54){OWR_ON;}
+	        	         		        	         	 if(count==63){OWR_ON;}
+	        	         		        	         	 if(count==72){OWR_ON;}
+	        	         		        	         	 if(count==81){OWR_ON;}
+	        	         		        	         	 if(count==90){OWR_ON;}
+	        	         		        	         	 if(count==99){OWR_ON;}
+	        	         		        	         	 if(count==108){OWR_ON;}
+	        	         		        	         	 if(count==117){OWR_ON;}
+	        	         		        	         	 if(count==126){OWR_ON;WriteConfig();}
+	        	         		        	         	//if(count==127){OWR_ON;WriteConfig();}
+
+	        	         		        	            if(count==46)
+	        	         		        	           {
+	        	         		        	            	if((rcvd[35]==1)&&(rcvd[42]==1)) {LED1_ON;}
+	        	         		        	                if((rcvd[36]==1)&&(rcvd[43]==1)) {LED1_OFF;}
+	        	         		        	                if((rcvd[37]==1)&&(rcvd[44]==1)) {LED2_ON;}
+	        	         		        	                if((rcvd[38]==1)&&(rcvd[45]==1)) {LED2_OFF;}
+
+	        	         		        	         			        	         			   }
+
+	        	         		        	           if (count==54)
+	        	         		        	                           	        	    {
+	        	         		        	                           	        	      new_addres=0;
+	        	         		        	                           	        	      new_addres|= (rcvd[47]<<7)|(rcvd[48]<<6)|(rcvd[49]<<5)|(rcvd[50]<<4)|(rcvd[51]<<3)|(rcvd[52]<<2)|(rcvd[53]<<1)|(rcvd[54]);
+                                                                                          addres=new_addres;
+                                                                                          settings[0]=new_addres;
+                                                                                          HAL_ResumeTick();
+	        	         		        	                           	        	    }
+
+
+
+
+	        	         		        	         	 break;
 
 
 
@@ -554,15 +597,23 @@ int main(void)
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_3);
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_4);
 
-  //   ReadConfig();
-   //  HAL_SuspendTick();
-  //  HAL_PWR_EnableSleepOnExit ();
+     ReadConfig();
+     addres=settings[0];
+     HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
+    HAL_SuspendTick();
+   HAL_PWR_EnableSleepOnExit ();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+	  LED1_ON;
+	  WriteConfig();
+	  LED1_OFF;
+	  HAL_SuspendTick();
+	  HAL_PWR_EnableSleepOnExit ();
 
     /* USER CODE END WHILE */
 
@@ -1007,6 +1058,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
          if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)   {alarm=1;}
         	 OWR_OFF;
         	 if((count==192)||(period>=100)){
+
         		 count=0;}
 
         	 line_status=1;
@@ -1021,7 +1073,10 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                   if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)   {alarm=1;}
                  	 OWR_OFF;
                  	 if((count==192)||(period_x>=100)){
-                 		 count=0;}
+
+                 		 count=0;
+
+                 	 }
                  	 ISOL_ON;
                  	 line_status=2;
                  	 }
@@ -1035,6 +1090,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
           if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2) // FALLING с HIGH на LOW
                         { pulse = HAL_TIM_ReadCapturedValue(&htim1, TIM_CHANNEL_2);
                           HAL_IWDG_Refresh(&hiwdg);
+
                           if(line_status==1){ISOL_OFF};
                           line_status=0;
                         OWR_OFF;
@@ -1069,6 +1125,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                                  {
                                    pulse_x = HAL_TIM_ReadCapturedValue(&htim1, TIM_CHANNEL_4);
                                    HAL_IWDG_Refresh(&hiwdg);
+
                                    line_status=0;
                                  OWR_OFF;
 
@@ -1093,7 +1150,6 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
 
                  	  count++;
-
                                  }
 
 
