@@ -238,19 +238,19 @@ void Protocol(void){
 
 	        	         	case 0 :
                                   TCT();
-                                  if (count==14){OWR_ON;}
+                                //  if (count==14){OWR_ON;}
 
 	        	            break;
 
 	        	         	case 1 :
 	        	         	      TCT();
-	        	         	     if (count==14){OWR_ON;}
+	        	         	   //  if (count==14){OWR_ON;}
 	        	            break;
 
 	        	         	 case 2 :
 	        	         		        	         		 TCT();
 
-	        	         		        	         		if(count==14){OWR_ON;}
+	        	         		        	         	//	if(count==14){OWR_ON;}
 	        	         		        	         		if(count==15){OWR_ON;}
 
 	        	         		        	        //  if((count>=14)&&(count<22))
@@ -277,7 +277,7 @@ void Protocol(void){
 
 
 
-	        	         		        	         	     if((count>=23)&&(count<31)&&(alarm==1))  //Статус прибора.выходов
+	        	         		        	         	/*     if((count>=23)&&(count<31)&&(alarm==1))  //Статус прибора.выходов
 	        	         		        	         	             	        	      			{
 	        	         		        	         	             	        	      				temp_ID|=((1)&(0b1));
 	        	         		        	         	             	        	      				if(temp_ID==1){ OWR_ON;}
@@ -285,16 +285,37 @@ void Protocol(void){
 	        	         		        	         	             	        	      				temp_ID=0;
 	        	         		        	         	            	        	      			}
 
-	        	         		        	         	     if((count>=32)&&(count<40)){OWR_ON;}
+
+	        	         		        	         	      */
+
+
+
+	        	         		        	         //if(count==26){OWR_ON;}//EEPROM ERROR
+	        	         		        	         //	if(count==27){OWR_ON;} //Изолятор линии
+	        	         		        	         //	if(count==28){OWR_ON;} //Сработка изолятора
+	        	         		        	         //	if(count==29){OWR_ON;} //Светодиод
+	        	         		        	        //  if(count==30){OWR_ON;} //Тревога
+
+	        	         		        	         	  //   if((count>=32)&&(count<40)){OWR_ON;}
+	        	         		        	         	 //  if((count==32)){OWR_ON;}  //КЗ шлейфа2
+	        	         		        	         	// if((count==33)){OWR_ON;}  //ОБрыв шлейфа2
+	        	         		        	         	// if((count==34)){OWR_ON;}  //КЗ шлейфа1
+	        	         		        	         	//	if((count==35)){OWR_ON;}  //обрыв шлейфа1
+	        	         		        	         	//	if((count==36)){OWR_ON;}  //неиспр реле
+	        	         		        	         	//	if((count==37)){OWR_ON;}  //неиспр реле
+	        	         		        	         	//	if((count==38)){OWR_ON;}  //неиспр реле
+	        	         		        	         	//	if((count==39)){OWR_ON;}  //неиспр реле
+	        	         		        	            //if((count==32)||(count==33)){OWR_ON;}  //Тревога шлейфа2
+	        	         		        	         	//if((count==34)||(count==35)){OWR_ON;}  //Тревога шлейфа1
+	        	         		        	            //if((count==36)||(count==37)){OWR_ON;}  //Неиспр реле
+	        	         		        	            //  if((count==38)||(count==39)){OWR_ON;}  //обрыв цепи управления
+
+
+
+
 	        	         		        	         	   if((count>=41)&&(count<49)){OWR_ON;}
 
-	        	         		        	         	 //     if((count>=42)&&(count<49)&&(alarm==1))  //Статус прибора.выходов
-	        	         		        	         	   //   			{
-	        	         		        	         	   //   				temp_ID|=((1)&(0b1));
-	        	         		        	         	   //   				if(temp_ID==1){ OWR_ON;}
-	        	         		        	         	    //  				if(temp_ID==0){ }
-	        	         		        	         	    //  				temp_ID=0;
-	        	         		        	         	     // 			}
+
 	        	         		        	              //Тестовый опрос
 	        	         		        	         	//      if(count==44){ OWR_ON;}
 
@@ -598,7 +619,7 @@ int main(void)
   ReadConfig();
 
       ISOL_ON;
-      alarm=1;
+      alarm=0;
 
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_2);
