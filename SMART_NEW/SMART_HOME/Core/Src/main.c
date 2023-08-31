@@ -64,7 +64,7 @@
 //#define   BTN  HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0;
 //#define   INP  HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_9);
 
-#define SETTINGS_ADDRESS 0x080059A0
+#define SETTINGS_ADDRESS 0x08007C00
 #define TEMP30_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FFFF7B8))
 #define VDD_CALIB ((uint32_t) (3300))
 #define VDD_APPLI ((uint32_t) (3000))
@@ -119,7 +119,7 @@ uint8_t addres=3;
 uint8_t new_addres=0;
 uint8_t Device_ID=157;//108 БСА
 uint8_t temp_ID=0;
-uint8_t settings[16]={0,};
+uint8_t settings[4]={0,};
 uint8_t line_status=0;
 uint8_t isol_status=0;
 /* USER CODE END PV */
@@ -167,7 +167,10 @@ void WriteConfig() {
 void ReadConfig() {
  // Структуру настроек превращаю в указатель на массив 8-ми битных значений
  uint8_t* setData = (uint8_t*)&settings;
+ LED1_ON;
+
  uint32_t tempData = FlashRead(SETTINGS_ADDRESS); // Прочесть слово из флешки
+// uint32_t tempData  = *(__IO uint32_t *)SETTINGS_ADDRESS;
  if (tempData != 0xffffffff) { // Если флешка не пустая
  setData[0] = (uint8_t)((tempData & 0xff000000) >> 24); // �?звлечь первый байт из слова
  setData[1] = (uint8_t)((tempData & 0x00ff0000) >> 16); // �?звлечь второй байт из слова
@@ -353,6 +356,7 @@ void Protocol(void){
 	        	         		        	                           	        	      new_addres|= (rcvd[47]<<7)|(rcvd[48]<<6)|(rcvd[49]<<5)|(rcvd[50]<<4)|(rcvd[51]<<3)|(rcvd[52]<<2)|(rcvd[53]<<1)|(rcvd[54]);
                                                                                           addres=new_addres;
                                                                                           settings[0]=new_addres;
+                                                                                          WriteConfig();
                                                                                           HAL_ResumeTick();
 	        	         		        	                           	        	    }
 
@@ -590,15 +594,22 @@ int main(void)
   MX_TIM3_Init();
   MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
+
+  ReadConfig();
+
       ISOL_ON;
       alarm=1;
+
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_2);
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_3);
      HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_4);
 
-     ReadConfig();
+
      addres=settings[0];
+     if(settings[0]==0xFF){addres=0;}
+     LED1_OFF;
+     LED2_OFF;
      HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
     HAL_SuspendTick();
    HAL_PWR_EnableSleepOnExit ();
@@ -609,11 +620,11 @@ int main(void)
   while (1)
   {
 
-	  LED1_ON;
-	  WriteConfig();
-	  LED1_OFF;
-	  HAL_SuspendTick();
-	  HAL_PWR_EnableSleepOnExit ();
+	//  LED1_ON;
+	//  WriteConfig();
+	//  LED1_OFF;
+	//  HAL_SuspendTick();
+	 // HAL_PWR_EnableSleepOnExit ();
 
     /* USER CODE END WHILE */
 
