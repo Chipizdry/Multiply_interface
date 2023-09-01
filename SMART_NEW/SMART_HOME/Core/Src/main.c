@@ -84,7 +84,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc;
-DMA_HandleTypeDef hdma_adc;
 
 IWDG_HandleTypeDef hiwdg;
 
@@ -122,6 +121,7 @@ uint8_t temp_ID=0;
 uint8_t settings[4]={0,};
 uint8_t line_status=0;
 uint8_t isol_status=0;
+uint8_t led_status=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -196,7 +196,8 @@ void Print_test(void){
 void TCT(void){
 
 	                 if (count==13){OWR_ON;}
-	                 if ((count==14)&&(alarm==1)){OWR_ON;}
+	                 if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
+	                // if (count==14){Print_test();}
 		        	 if (count==22){OWR_ON;}
 		        	 if (count==31){OWR_ON;}
 		        	 if (count==40){OWR_ON;}
@@ -216,12 +217,21 @@ void TCT(void){
 
 }
 
+void Quick_protocol(void){
+	 if((rcvd[1]==1)&&(rcvd[2]==0))
+	        	  {
 
+		               if(count==2){
+	        	       addres_call=addres_call+1;
+	        	       if(addres_call==addres){OWR_ON;}}
+		               if((count==3)&&(addres_call==addres)&&(alarm==1)){OWR_ON;LED2_ON;}}}
 
 
 void Protocol(void){
-	           //  if ((count==9)&&(alarm=1)){OWR_ON;}
 
+	//Print_test();
+	           // if ((count==9)&&(alarm=1)){OWR_ON;}
+	 if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
               TCT();
 
 	        	 if (count==13)
@@ -237,36 +247,32 @@ void Protocol(void){
 	        	         			   {
 
 	        	         	case 0 :
+	        	         		//led_status=0;
                                   TCT();
-                                //  if (count==14){OWR_ON;}
-
+                                  if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
+                                  if (count==15){OWR_ON;LED2_ON;}
 	        	            break;
 
 	        	         	case 1 :
+	        	         		led_status=1;
 	        	         	      TCT();
-	        	         	   //  if (count==14){OWR_ON;}
+
+	        	         	     if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
+	        	         	    if(count==29){OWR_ON;LED2_ON;LED1_ON;} //Светодиод
 	        	            break;
 
 	        	         	 case 2 :
-	        	         		        	         		 TCT();
+	        	         		      TCT();
 
-	        	         		        	         	//	if(count==14){OWR_ON;}
-	        	         		        	         		if(count==15){OWR_ON;}
+	        	         		      if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
 
-	        	         		        	        //  if((count>=14)&&(count<22))
-	        	         		        	         //    {
-	        	         		        	         //		 temp_ID|=((Device_ID>>(21-count))&(0b1));
-	        	         		        	         //		 if(temp_ID==1){OWR_ON;}
-	        	         		        	         //		 if(temp_ID==0){OWR_OFF;}
-	        	         		        	         //		     temp_ID=0;
-	        	         		        	         //		       }
 
-	        	         		        	         	 break;
+	        	         	 break;
 
 	        	          	 case 3 :
-
+	        	          	//	led_status=0;
 	        	         	                                   TCT();
-
+	        	         	                                  if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
 	        	         		        	         		 if((count>=14)&&(count<22))
 	        	         		        	         		        	         	       {
 	        	         		        	         		        	         	            temp_ID|=((Device_ID>>(21-count))&(0b1));
@@ -291,10 +297,10 @@ void Protocol(void){
 
 
 	        	         		        	         //if(count==26){OWR_ON;}//EEPROM ERROR
-	        	         		        	         //	if(count==27){OWR_ON;} //Изолятор линии
+	        	         		        	         //	if(count==27){OWR_ON;} //�?золятор линии
 	        	         		        	         //	if(count==28){OWR_ON;} //Сработка изолятора
-	        	         		        	         //	if(count==29){OWR_ON;} //Светодиод
-	        	         		        	        //  if(count==30){OWR_ON;} //Тревога
+	        	         		        	         	if((count==29)&&(led_status==1)){OWR_ON;LED2_ON;} //Светодиод
+	        	         		        	          if((count==30)&&(alarm==1)){OWR_ON;LED2_ON;} //Тревога
 
 	        	         		        	         	  //   if((count>=32)&&(count<40)){OWR_ON;}
 	        	         		        	         	 //  if((count==32)){OWR_ON;}  //КЗ шлейфа2
@@ -313,8 +319,8 @@ void Protocol(void){
 
 
 
-	        	         		        	         	   if((count>=41)&&(count<49)){OWR_ON;}
-
+	        	         		        	         //	   if((count>=86)||(count<94)){OWR_ON;}
+	        	         		        	        // if((count=93)){OWR_ON;}
 
 	        	         		        	              //Тестовый опрос
 	        	         		        	         	//      if(count==44){ OWR_ON;}
@@ -346,11 +352,21 @@ void Protocol(void){
 
 
 	        	         	 break;
+	        	         	case 7 :
+	        	         		  TCT();
+
+	        	         	 if ((count==14)&&(alarm==1)){OWR_ON;LED2_ON;}
+	        	         	 if (count==50){OWR_ON;}
+	        	         	if (count==58){OWR_ON;}
+	        	         	 if (count==60){OWR_ON;}
+	        	         	 if (count==61){OWR_ON;}
+
+	        	         	 break;
 
 	        	         	 case 13 :
 
-	        	         		        	         		 if(count==30){OWR_ON;}
-	        	         		        	         	  if(count==45){OWR_ON;}
+	        	         		        	         	 if(count==30){OWR_ON;}
+	        	         		        	         	 if(count==45){OWR_ON;}
 	        	         		        	         	 if(count==54){OWR_ON;}
 	        	         		        	         	 if(count==63){OWR_ON;}
 	        	         		        	         	 if(count==72){OWR_ON;}
@@ -1001,9 +1017,6 @@ static void MX_DMA_Init(void)
   __HAL_RCC_DMA1_CLK_ENABLE();
 
   /* DMA interrupt init */
-  /* DMA1_Channel1_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
   /* DMA1_Channel2_3_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel2_3_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);
@@ -1088,9 +1101,9 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
         	 TIM1->CNT=0;
          if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)   {alarm=1;}
-        	 OWR_OFF;
+        	 OWR_OFF;LED1_OFF;LED2_OFF;
         	 if((count==192)||(period>=100)){
-
+        		 Print_test();
         		 count=0;}
 
         	 line_status=1;
@@ -1103,9 +1116,9 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
                  	 TIM1->CNT=0;
                   if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0)   {alarm=1;}
-                 	 OWR_OFF;
+                 	 OWR_OFF;LED1_OFF;LED2_OFF;
                  	 if((count==192)||(period_x>=100)){
-
+                 		Print_test();
                  		 count=0;
 
                  	 }
@@ -1125,18 +1138,17 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
                           if(line_status==1){ISOL_OFF};
                           line_status=0;
-                        OWR_OFF;
+                          if((ADC_read(0))>=150){alarm=0;}
+                          if((ADC_read(0))<150){alarm=1;}
+
+                        OWR_OFF;LED2_OFF;
 
              if((pulse>55)&&(pulse<60))  {count=0;rcvd[count]=2;rcv_addres=0;directive=0;}
         	 if((pulse>36)&&(pulse<40))  rcvd[count]=1;
         	 if((pulse>16)&&(pulse<21))  rcvd[count]=0;
-        	// Print_test();
-        	 if((rcvd[1]==1)&&(rcvd[2]==0)&&(count==2))
-        	        	                        	  {
-        	        	                        		 addres_call=addres_call+1;
-        	        	                        		 if(addres_call==addres)
-        	        	                        		    {OWR_ON;}}
+        	 if (count<5){Quick_protocol();}
 
+        	 //if (count==14){Print_test();}
         	 if (count==8)
         	        	    {
         	        	      rcv_addres=0;
@@ -1159,17 +1171,18 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                                    HAL_IWDG_Refresh(&hiwdg);
 
                                    line_status=0;
-                                 OWR_OFF;
+                                 OWR_OFF;LED2_OFF;
+                             if((ADC_read(0))>=150){alarm=0;}
+                             if((ADC_read(0))<150){alarm=1;}
+
+
 
                       if((pulse_x>55)&&(pulse_x<60))  {count=0;rcvd[count]=2;rcv_addres=0;directive=0;}
                  	 if((pulse_x>36)&&(pulse_x<40))  rcvd[count]=1;
                  	 if((pulse_x>16)&&(pulse_x<21))  rcvd[count]=0;
+                 	 if (count<5){Quick_protocol();}
 
-                 	 if((rcvd[1]==1)&&(rcvd[2]==0)&&(count==2))
-                 	        	                        	  {
-                 	        	                        		 addres_call=addres_call+1;
-                 	        	                        		 if(addres_call==addres)
-                 	        	                        		    {OWR_ON;}}
+
 
                  	 if (count==8)
                  	        	    {
@@ -1180,19 +1193,9 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                  	        	    }
                  	 if((rcv_addres==addres)&&(count>8)){Protocol();}
 
-
+                 //	if (count==14){Print_test();}
                  	  count++;
                                  }
-
-
-
-
-
-
-
-
-
-
 
           HAL_PWR_EnableSleepOnExit ();
      }
@@ -1201,7 +1204,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 
 {
-  LED2_OFF;
+ // LED2_OFF;
 }
 
 /* USER CODE END 4 */
