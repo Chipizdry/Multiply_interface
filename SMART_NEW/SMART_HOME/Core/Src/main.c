@@ -1140,6 +1140,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                           line_status=0;
                           if((ADC_read(0))>=150){alarm=0;}
                           if((ADC_read(0))<150){alarm=1;}
+                          v_CPU=ADC_read(8)/16;
+
 
                         OWR_OFF;LED2_OFF;
 
@@ -1174,7 +1176,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                                  OWR_OFF;LED2_OFF;
                              if((ADC_read(0))>=150){alarm=0;}
                              if((ADC_read(0))<150){alarm=1;}
-
+                             v_CPU=ADC_read(8)/16;
 
 
                       if((pulse_x>55)&&(pulse_x<60))  {count=0;rcvd[count]=2;rcv_addres=0;directive=0;}

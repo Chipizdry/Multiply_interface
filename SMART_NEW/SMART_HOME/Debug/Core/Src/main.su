@@ -24,5 +24,5 @@
 ../Core/Src/main.c:1013:13:MX_DMA_Init	16	static
 ../Core/Src/main.c:1031:13:MX_GPIO_Init	48	static
 ../Core/Src/main.c:1090:6:HAL_TIM_IC_CaptureCallback	16	static
-../Core/Src/main.c:1204:6:HAL_UART_TxCpltCallback	16	static
-../Core/Src/main.c:1216:6:Error_Handler	8	static,ignoring_inline_asm
+../Core/Src/main.c:1206:6:HAL_UART_TxCpltCallback	16	static
+../Core/Src/main.c:1218:6:Error_Handler	8	static,ignoring_inline_asm
