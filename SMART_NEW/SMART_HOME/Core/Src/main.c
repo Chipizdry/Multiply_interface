@@ -317,6 +317,14 @@ void Protocol(void){
 	        	         		        	            //  if((count==38)||(count==39)){OWR_ON;}  //обрыв цепи управления
 
 
+	        	         		        	         if((count>=50)&&(count<58))
+	        	         		        	            {
+	        	         		        	        	  temp_ID|=((v_CPU>>(57-count))&(0b1));
+	        	         		        	        	  if(temp_ID==1){OWR_ON;}
+	        	         		        	        	  if(temp_ID==0){OWR_OFF;}
+	        	         		        	        	  temp_ID=0;
+	        	         		        	         }
+
 
 
 	        	         		        	         //	   if((count>=86)||(count<94)){OWR_ON;}
@@ -1140,7 +1148,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                           line_status=0;
                           if((ADC_read(0))>=150){alarm=0;}
                           if((ADC_read(0))<150){alarm=1;}
-                          v_CPU=ADC_read(8)/16;
+
 
 
                         OWR_OFF;LED2_OFF;
@@ -1159,7 +1167,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
         	        	    }
         	 if((rcv_addres==addres)&&(count>8)){Protocol();}
-
+        	  v_CPU=ADC_read(8)/16;
 
         	  count++;
 
@@ -1176,7 +1184,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
                                  OWR_OFF;LED2_OFF;
                              if((ADC_read(0))>=150){alarm=0;}
                              if((ADC_read(0))<150){alarm=1;}
-                             v_CPU=ADC_read(8)/16;
+
 
 
                       if((pulse_x>55)&&(pulse_x<60))  {count=0;rcvd[count]=2;rcv_addres=0;directive=0;}
@@ -1194,8 +1202,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
                  	        	    }
                  	 if((rcv_addres==addres)&&(count>8)){Protocol();}
+                 	 v_CPU=ADC_read(8)/16;
 
-                 //	if (count==14){Print_test();}
                  	  count++;
                                  }
 
