@@ -1,0 +1,10 @@
+main.c:89:6:UART_SNIFF	8
+main.c:137:6:HAL_UART_RxCpltCallback	2
+main.c:167:6:HAL_UART_IDLE_Callback	3
+main.c:213:5:main	1
+main.c:282:6:SystemClock_Config	4
+main.c:328:13:MX_ADC1_Init	4
+main.c:391:13:MX_USART1_UART_Init	2
+main.c:426:13:MX_USART2_UART_Init	2
+main.c:461:13:MX_GPIO_Init	1
+main.c:489:6:Error_Handler	1
