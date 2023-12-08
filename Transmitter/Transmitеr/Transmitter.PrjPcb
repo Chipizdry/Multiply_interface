@@ -58,7 +58,7 @@ GenerateClassCluster=0
 DocumentUniqueId=ZZXNBAVE
 
 [Document2]
-DocumentPath=..\Transmitеer\Transmitter.PcbDoc
+DocumentPath=Transmitter.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
